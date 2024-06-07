@@ -31,3 +31,7 @@
 .personalInformation mat-form-field {
     width: 30%;
 }
+
+.mb-24 {
+    margin-bottom: 24px;
+}
