@@ -8,18 +8,18 @@
 
       <mat-card>
 
-        <mat-card-content>
+        <mat-card-content class="personalInformation">
           <form [formGroup]="personalInformation">
             <ng-template matStepLabel>Personal information</ng-template>
             <div class="flex-gap">
-              <mat-form-field>
+              <mat-form-field [hideRequiredMarker]="true">
                 <mat-label>First Name</mat-label>
                 <input matInput placeholder=" Enter your first name" formControlName="firstname" required>
                 <mat-error *ngIf="firstname.errors?.['required']">
                   Firstname is required
                 </mat-error>
               </mat-form-field>
-              <mat-form-field>
+              <mat-form-field [hideRequiredMarker]="true">
                 <mat-label>Last Name</mat-label>
                 <input matInput placeholder="Enter your last name" formControlName="lastname" required>
                 <mat-error *ngIf="lastname.errors?.['required']">
@@ -28,7 +28,7 @@
               </mat-form-field>
             </div>
             <div class="flex-gap">
-              <mat-form-field>
+              <mat-form-field [hideRequiredMarker]="true">
                 <mat-label>Email Address</mat-label>
                 <input matInput placeholder="Enter your email address" formControlName="email" required>
                 <mat-error *ngIf="email.value && email.invalid && (email.dirty || email.touched)">
@@ -39,14 +39,14 @@
                 </mat-error>
 
               </mat-form-field>
-              <mat-form-field>
+              <mat-form-field [hideRequiredMarker]="true">
                 <mat-label>Phone Number</mat-label>
                 <input matInput placeholder="Enter your phone number" formControlName="phone" required>
                 <mat-error *ngIf="phone.errors?.['required']">
                   Phone number is required
                 </mat-error>
                 <mat-error *ngIf="phone.value && phone.invalid && (phone.dirty || phone.touched)">
-                  Enter a valid phone number
+                  Phone number should be atleast 10 digits
                 </mat-error>
               </mat-form-field>
 
@@ -60,7 +60,7 @@
 
       <div class="flex-justify">
         <button mat-button disabled>Back</button>
-        <button mat-button matStepperNext>Next</button>
+        <button mat-button matStepperNext color="primary">Next</button>
       </div>
     </mat-step>
 
@@ -71,7 +71,7 @@
           <form [formGroup]="flightDetails">
             <ng-template matStepLabel>Flight Details</ng-template>
             <div class="flex-gap">
-              <mat-form-field>
+              <mat-form-field [hideRequiredMarker]="true">
                 <mat-label>Select your departure city</mat-label>
                 <mat-select formControlName="departure">
                   <mat-option *ngFor="let city of cities" [value]="city">
@@ -82,7 +82,7 @@
                   Departure city is required
                 </mat-error>
               </mat-form-field>
-              <mat-form-field>
+              <mat-form-field [hideRequiredMarker]="true">
                 <mat-label>Select your destination city</mat-label>
                 <mat-select formControlName="destination">
                   <mat-option *ngFor="let city of cities" [value]="city">
@@ -93,7 +93,7 @@
                   Destination city is required
                 </mat-error>
               </mat-form-field>
-              <mat-form-field>
+              <mat-form-field [hideRequiredMarker]="true">
                 <mat-label>Departure Date</mat-label>
                 <input matInput [matDatepicker]="picker" placeholder="dd/mm/yyyy" formControlName="departuredate"
                   [min]="minDate">
@@ -103,7 +103,7 @@
                   Departure date is required
                 </mat-error>
               </mat-form-field>
-              <mat-form-field>
+              <mat-form-field [hideRequiredMarker]="true">
                 <mat-label>Return Date</mat-label>
                 <input matInput [matDatepicker]="picker1" placeholder="dd/mm/yyyy" formControlName="returndate"
                   [min]="minDate">
@@ -116,7 +116,7 @@
             </div>
 
             <div class="flex-gap">
-              <mat-form-field>
+              <mat-form-field [hideRequiredMarker]="true">
                 <mat-label>Select your flight class</mat-label>
                 <mat-select formControlName="flightclass">
                   <mat-option *ngFor="let class of classes" [value]="class">
@@ -127,7 +127,7 @@
                   Flight class is required
                 </mat-error>
               </mat-form-field>
-              <mat-form-field>
+              <mat-form-field [hideRequiredMarker]="true">
                 <mat-label>Number of Passengers</mat-label>
                 <input type="number" matInput placeholder=" Enter number of passengers" formControlName="passengers"
                   required>
@@ -144,7 +144,7 @@
 
       <div class="flex-justify">
         <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
+        <button mat-button matStepperNext color="primary">Next</button>
       </div>
 
     </mat-step>

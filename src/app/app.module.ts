@@ -8,7 +8,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
-import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
@@ -23,7 +22,6 @@ import { PreviewComponent } from './components/preview/preview.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PersonalInfoComponent,
     DialogComponent,
     ConfirmationComponent,
     PreviewComponent

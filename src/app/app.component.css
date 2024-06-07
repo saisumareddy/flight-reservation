@@ -1,6 +1,7 @@
 .heading {
     color: #377ed4;
     letter-spacing: 2px;
+    margin-top: 20px;
 }
 
 .flex-1 {
@@ -25,4 +26,8 @@
 
 .m-24 {
     margin-left: 24px;
+}
+
+.personalInformation mat-form-field {
+    width: 30%;
 }

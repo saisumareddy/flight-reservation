@@ -39,3 +39,6 @@ body {
 * {
     font-family: "WorkSans",'Material Icons', "Helvetica Neue", sans-serif !important;
 }
+.mdc-text-field--filled:not(.mdc-text-field--disabled),.mat-mdc-form-field-focus-overlay  {
+    background-color: white !important;
+}
