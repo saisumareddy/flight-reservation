@@ -1,0 +1,31 @@
+.overview {
+    display: flex;
+    gap: 100px;
+    color: #377ed4;
+}
+
+.infoWithIcon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.infoWithIcon span {
+    color: black;
+    font-size: 14px;
+}
+
+h5 {
+    margin-bottom: 0px !important;
+}
+
+.info-text {
+    margin-bottom: 32px;
+    margin-top: 18px;
+}
+
+.flex-gap {
+    display: flex;
+    gap: 20px;
+}

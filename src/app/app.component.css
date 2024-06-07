@@ -1,0 +1,28 @@
+.heading {
+    color: #377ed4;
+    letter-spacing: 2px;
+}
+
+.flex-1 {
+    display: flex;
+    gap: 2;
+}
+
+.flex-justify {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-gap {
+    display: flex;
+    gap: 20px;
+}
+
+.m-24 {
+    margin-left: 24px;
+}

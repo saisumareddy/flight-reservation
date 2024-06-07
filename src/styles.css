@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: "WorkSans";
+    src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "WorkSans", "Helvetica Neue", sans-serif !important;
+}
+
+.page {
+    max-width: 1080px;
+    margin: auto;
+    background: #E3E6E3;
+    ;
+}
+
+.mat-stepper-horizontal {
+    background: none !important;
+}
+
+.mat-mdc-raised-button:not(:disabled) {
+    background-color: green !important;
+    color:white !important;
+}
+.material-icons {
+    font-family: 'Material Icons' !important;
+}
+
+* {
+    font-family: "WorkSans",'Material Icons', "Helvetica Neue", sans-serif !important;
+}

@@ -1,0 +1,59 @@
+<p class="info-text">Welcome to our flight reservation website. Complete the multi step form below to book your flight.
+</p>
+<div class="overview">
+    <div>
+        <h2>PERSONAL DETAILS</h2>
+        <div class="infoWithIcon">
+            <mat-icon aria-hidden="false" fontIcon="account_circle"></mat-icon>
+            <span>{{personalInfo.lastname}}</span>
+        </div>
+        <div class="infoWithIcon">
+            <mat-icon aria-hidden="false" fontIcon="mail"></mat-icon>
+            <span>{{personalInfo.email}}</span>
+        </div>
+        <div class="infoWithIcon">
+            <mat-icon aria-hidden="false" fontIcon="call"></mat-icon>
+            <span>{{personalInfo.phone}}</span>
+        </div>
+    </div>
+    <div>
+        <h2>FLIGHT DETAILS</h2>
+        <div class="flex-gap">
+            <div>
+                <h5>Departure City</h5>
+                <div class="infoWithIcon">
+                    <mat-icon aria-hidden="false" fontIcon="flight_takeoff"></mat-icon>
+                    <span>{{flightInfo.departure }}</span>
+                </div>
+                <h5>Destination City</h5>
+                <div class="infoWithIcon">
+                    <mat-icon aria-hidden="false" fontIcon="flight_takeoff"></mat-icon>
+                    <span>{{flightInfo.destination}}</span>
+                </div>
+                <h5>Departure Date</h5>
+                <div class="infoWithIcon">
+                    <mat-icon aria-hidden="false" fontIcon="event"></mat-icon>
+                    <span>{{flightInfo.departuredate | date:'yyyy-MM-dd'}}</span>
+                </div>
+                <h5>Return Date</h5>
+                <div class="infoWithIcon">
+                    <mat-icon aria-hidden="false" fontIcon="event"></mat-icon>
+                    <span>{{flightInfo.returndate | date:'yyyy-MM-dd'}}</span>
+                </div>
+            </div>
+            <div>
+                <h5>Flight Class</h5>
+                <div class="infoWithIcon">
+                    <mat-icon aria-hidden="false" fontIcon="flight_class"></mat-icon>
+                    <span>{{flightInfo.flightclass}}</span>
+                </div>
+                <h5>Number Of passengers</h5>
+                <div class="infoWithIcon">
+                    <mat-icon aria-hidden="false" fontIcon="group"></mat-icon>
+                    <span>{{flightInfo.passengers}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
